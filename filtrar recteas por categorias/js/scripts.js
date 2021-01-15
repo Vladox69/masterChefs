@@ -9,6 +9,33 @@ $(' .categor_item').click(function () {
 });
 
 //mostrando todos los productos
+//filtrando categorias
+
+    var catProdcut = $(this).attr('category');
+    console.log(catProdcut);
+
+    //agregando clases active al bototn seleccionado
+    $(' .categor_item').removeClass('ct_item-active');
+    $(this).addClass('ct_item-active');
+
+    // filtrar sin efectos- ocultado products
+    //ocultando productos -hide()
+
+    $('.recet-item').css('transform', 'scale(0)');
+    function hideProduct(){
+        $('.recet-item').hide();
+    } setTimeout(hideProduct,400);
+
+    
+
+    // mostrar productos - show()
+
+    function showProduct(){
+        $(' .recet-item[category="' + catProdcut + '"]').show();
+        $(' .recet-item[category="' + catProdcut + '"]').css('transform', 'scale(1)');
+        
+    }setTimeout(showProduct,400);
+    
 
    
 
