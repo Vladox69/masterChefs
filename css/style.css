@@ -6,15 +6,16 @@
 
 h1{
     text-align: center;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     margin-top: 250px;
 }
+
 body{
-    background: crimson;
+    background: rgb(240, 235, 235);
 }
 
 header{
-    background: antiquewhite;
+    background: #fff;
     background-size: cover;
     background-position: center;
     height: 50px;
@@ -63,15 +64,15 @@ nav img{
 }
 
 .container h1{
-    color:blanchedalmond;
+    color:rgb(0, 0, 0);
     font-size: 36px;
     margin-bottom: 40px;
 }
 
 .button{
-    background: blanchedalmond;
+    background: #fff;
     padding: 10px 15px;
-    color: blue;
+    color: rgb(0, 0, 0);
     font-weight: bolder;
     text-transform: uppercase;
     font-size:  18px; 
