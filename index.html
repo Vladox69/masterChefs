@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,instal-scale=1.0">
+        <title>Ventana modal de registro</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <h1>POP LOGIN</h1>
+            <a href="#" class="button" id="button">Login</a>
+        </div>
+
+        <div class="popup">
+            <div class="popup-content">
+                <img src="close.png" alt="Close" class="close">
+                <img src="user.png" alt="User">
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Password">
+                <a href="#" class="button">Login</a>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("button").addEventListener("click",function(){
+                document.querySelector(".popup").style.display= "flex";
+            })
+            document.querySelector(".close").addEventListener("click",function(){
+                document.querySelector(".popup").style.display="none";
+            })
+        </script>
+
+    </body>
+</html>
