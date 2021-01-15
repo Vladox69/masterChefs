@@ -32,3 +32,13 @@ body{
      display: flex;
     
     }
+
+    .category_list{
+        display: flex;
+        flex-direction: column;
+        width: 18%;
+        
+        
+        }
+       
+
