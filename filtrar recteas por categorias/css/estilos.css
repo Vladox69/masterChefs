@@ -52,4 +52,10 @@ body{
             color: #fff;
         
         }
+        /*activar el primer boton d eun solo color*/
+
+.category_list .ct_item-active{
+    background:rgb(233, 142, 198) ;
+}
+
 
