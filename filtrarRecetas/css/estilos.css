@@ -27,7 +27,7 @@ img {
 	height: auto;
 }
 #main-header {
-	background: #333;
+	background: rgb(51, 1, 1);
 	color: white;
 	height: 80px;
 }	
