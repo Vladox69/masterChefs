@@ -12,7 +12,7 @@ $(document).ready(function () {
         var catProdcut = $(this).attr('category');
         console.log(catProdcut);
 
-        //agregando clases active al bototn seleccionado
+        //agregando clases active al boton seleccionado
         $(' .categor_item').removeClass('ct_item-active');
         $(this).addClass('ct_item-active');
 
