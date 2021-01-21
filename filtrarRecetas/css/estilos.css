@@ -222,3 +222,7 @@ body{
     display: flex;
     flex-direction: column;
     align-self: flex-start;
+
+    /*agregar transition*/ 
+    transition: all .6s;
+ }
