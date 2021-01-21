@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <meta name="viewport" content="width=device-widt", user-scalable=yes, initial-scale=1.0, maximu-scale=3.0, minimun-scale=1.0>
-    <link rel="stylesheet" href="css/estiloRegistro.css" type="text/css">
+    <link rel="stylesheet" href="css/estiloLoginRegistro.css" type="text/css">
 </head>
 <body>
 
-    <form class="formulario">
+    <form class="formulario" method="post" action="http://localhost/masterChefs/controllers/insertar.php">
         <h1>Registrate</h1>
         <div class="contenedor">
             <div class="input-contenedor">
-                <input type="text" placeholder="Nombre completo">
+                <input type="text" name="txt_nombre_usuario" id="txt_nombre_usuario" placeholder="Nombre usuario">
             </div>
             
             <div class="input-contenedor">
-                <input type="text" placeholder="Corre electrónico">
+                <input type="text" name="txt_correo_usuario" id="txt_correo_usuario" placeholder="Corre electrónico">
             </div>
             
             <div class="input-contenedor">
-                <input type="password" placeholder="Contraseña">
+                <input type="password" name="txt_password_usuario" id="txt_password_usuario" placeholder="Contraseña">
             </div>
             <input type="submit" value="Registrate" class="button">
             <p>Al registrarte, aceptas nuestros términos y condiciones de uso</p>
