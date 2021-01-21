@@ -89,3 +89,113 @@ nav {
 					background: #0b76a6;
                 }
                 
+                *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #E0E4E5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrap{
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+.wrap > h1{
+    color: #af234d;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px opx;
+}
+.wrap > h1:after{
+    content: '';
+    width:100%;
+    height: 2px;
+    background : #6e3030;
+    margin: 20px 0;
+    }
+    .store-wrapper{
+     display: flex;
+    
+    }
+
+    .category_list{
+        display: flex;
+        flex-direction: column;
+        width: 18%;
+        
+        
+        }
+        .category_list .categor_item{
+            display: block;
+            width: 90%;
+            padding: 15px 0;
+            margin-bottom:20px ;
+            background: rgb(167, 155, 201);
+        
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+        
+        }
+/* dar estilo a la pagina*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #E0E4E5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrap{
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+.wrap > h1{
+    color: #af234d;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px opx;
+}
+.wrap > h1:after{
+    content: '';
+    width:100%;
+    height: 2px;
+    background : #6e3030;
+    margin: 20px 0;
+    }
+    .store-wrapper{
+     display: flex;
+    
+    }
+
+    .category_list{
+        display: flex;
+        flex-direction: column;
+        width: 18%;
+        
+        
+        }
+        .category_list .categor_item{
+            display: block;
+            width: 90%;
+            padding: 15px 0;
+            margin-bottom:20px ;
+            background: rgb(167, 155, 201);
+        
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+        
+        }
