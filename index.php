@@ -8,14 +8,39 @@
     <meta name="viewport" content="width=device-width, user-scalable-yes, initial-scale=1.0">
 </head>
 
-<body>
+<?php
+    session_start();
+    require_once("controllers/islogin.php");
+    if($isconnect){
+?>
+        <header class="main-header">
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Recetas</a>
+                <a href="#">Tus recetas</a>
+                <a href="#">Contactos</a>
+                <a href="controllers/logout.php">Cerrar sesión</a>
+            </nav>
+    <?php
+    echo "Bienvenido ";
+    echo $_SESSION['nombre'];
+    }else{
+    ?>
     <header class="main-header">
-        <nav>
+    <nav>
             <a href="#">Inicio</a>
             <a href="#">Recetas</a>
-            <a href="#">Tus recetas</a>
+            <a href="http://localhost/masterChefs/login.html">Ingresar</a>
             <a href="#">Contactos</a>
         </nav>
+
+    <?php
+    }
+    ?>
+    <body>
+    
+    <header class="main-header">
+        
         <section class="textos-header">
             <h1>Recetas y algo más...</h1>
             <h2>Mira nuestras recetas y compártenos la tuya.</h2>
@@ -109,5 +134,7 @@
         </div>
         <h2 class="titulo-final">&copy; GrupoACS</h2>
     </footer>
+
 </body>
+
 </html>

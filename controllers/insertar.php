@@ -14,7 +14,7 @@ $nombre_usuario=$_POST["txt_nombre_usuario"] ;
 $correo_usuario=$_POST["txt_correo_usuario"] ;
 $password_usuario=$_POST["txt_password_usuario"] ;
 
-$insertar="INSERT INTO usuarios (NOM_USU,CORR_USU, PASS_USU) VALUES('$nombre_usuario','$correo_usuario','$password_usuario');";
+$insertar="INSERT INTO usuarios (NOM_USU,EMAIL_USU, CLAVE_USU) VALUES('$nombre_usuario','$correo_usuario','$password_usuario');";
 
 $conexion=mysqli_query($connect,$insertar);
 
