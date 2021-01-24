@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Superslider</title>
+<style>
+.superslider{
+  max-width:400px;
+  margin:0 auto;
+  text-align:center;
+  position:relative;
+  margin:0;
+  padding:0;
+}
+.superslider li{
+  width:100%;
+  display:none;
+  margin:0;
+  padding:0;
+}
+.superslider img{
+  width:100%;
+  height:auto;
+}
+</style>
+</head>
+<body>
+  <ul class="superslider">
+    <li style="display:inline-block;"><img src="https://sevilla.abc.es/gurme/wp-content/uploads/sites/24/2012/12/brocheta-pollo-pimientos.jpg"/></li>
+    <li><img src="//images/logo.jpeg"/></li>
+    <li><img src="https://www.eluniverso.com/sites/default/files/styles/powgallery_1024/public/fotos/2020/10/erika.jpeg?itok=qJOAU4qP"/></li>
+  </ul>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2"></script>
+<script type="text/javascript">
+jQuery(function(){
+    var fotitoActual = 0,
+      elementos = jQuery('.superslider li'),
+      cantidadElementos = elementos.length;
+    function rularSlides() {
+      var cogerActual = jQuery('.superslider li').eq(fotitoActual);
+      elementos.hide();
+      cogerActual.css('display','inline-block');
+    }
+    var autoSlide = setInterval(function() {
+      fotitoActual += 1;
+      if (fotitoActual > cantidadElementos - 1) {
+        fotitoActual = 0;
+      }
+      rularSlides();
+    }, 3000);
+});
+</script>
+</body>
+</html>
