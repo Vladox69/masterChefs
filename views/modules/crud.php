@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Basic CRUD Application - jQuery EasyUI CRUD Demo</title>
-    <link rel="stylesheet" type="text/css" href="../jquery-easyui-1.9.11/themes/default/easyui.css">
-        <link rel="stylesheet" type="text/css" href="../jquery-easyui-1.9.11/themes/icon.css">        
-        <script type="text/javascript" src="../jquery-easyui-1.9.11/jquery.min.js"></script>
-        <script type="text/javascript" src="../jquery-easyui-1.9.11/jquery.easyui.min.js"></script>    
-    <link rel="stylesheet" type="text/css" href="../jquery-easyui-1.9.11/demo/demo.css">
+    <link rel="stylesheet" type="text/css" href="/masterChefs/jquery-easyui-1.9.11/themes/default/easyui.css">
+        <link rel="stylesheet" type="text/css" href="/masterChefs/jquery-easyui-1.9.11/themes/icon.css">        
+        <script type="text/javascript" src="/masterChefs/jquery-easyui-1.9.11/jquery.min.js"></script>
+        <script type="text/javascript" src="/masterChefs/jquery-easyui-1.9.11/jquery.easyui.min.js"></script>    
+    <link rel="stylesheet" type="text/css" href="/masterChefs/jquery-easyui-1.9.11/demo/demo.css">
 </head>
 <body>
     <h2>Formulario Recetas</h2>
@@ -33,8 +33,8 @@
     
     <div id="dlg" class="easyui-dialog" style="width:400px" data-options="closed:true,modal:true,border:'thin',buttons:'#dlg-buttons'">
         <form id="fm" method="post" novalidate style="margin:0;padding:20px 50px" action="http://localhost/masterChefs/models/acceso.php">
-           <input type="hidden" id="op" name="op" value="insertarAlumno"> 
-           <input type="hidden" id="ope" name="ope" value="updateAlumno">           
+           <input type="hidden" id="op" name="op" value="insertarReceta"> 
+           <input type="hidden" id="ope" name="ope" value="updateReceta">           
             <h3>Informacion Receta</h3>
             <div style="margin-bottom:10px">
                 <input name="ID_REC" class="easyui-textbox" required="true" label="ID:" style="width:100%">
@@ -150,7 +150,7 @@
             if (row){
                 $.messager.confirm('Confirm','¿Desea eliminar la receta?',function(r){
                     if (r){
-                        $.post('models/acceso.php',{ op: "deleteAlumno",
+                        $.post('models/acceso.php',{ op: "deleteReceta",
                          CED_EST: row["CED_EST"]},function(resultado){
                             if (resultado.success){
                                 $('#dg').datagrid('reload');    // reload the user data
