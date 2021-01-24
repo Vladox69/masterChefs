@@ -7,11 +7,12 @@
         <link rel="stylesheet" type="text/css" href="jquery-easyui-1.9.11/themes/icon.css">        
         <script type="text/javascript" src="jquery-easyui-1.9.11/jquery.min.js"></script>
         <script type="text/javascript" src="jquery-easyui-1.9.11/jquery.easyui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/estiloReceta.css" media="all" />     
+    <link rel="stylesheet" type="text/css" href="../jquery-easyui-1.9.11/demo/demo.css">
 </head>
 <body>
     <h2>Formulario Recetas</h2>
     <p>Seleccionar los botones para obtener el proceso deseado.</p>
-    
     <table id="dg" title="Recetario" class="easyui-datagrid" style="width:700px;height:250px"
             url="models/cargar.php"
             toolbar="#toolbar" pagination="true"
