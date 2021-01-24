@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Basic CRUD Application - jQuery EasyUI CRUD Demo</title>
-    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.9.11/themes/default/easyui.css">
-        <link rel="stylesheet" type="text/css" href="jquery-easyui-1.9.11/themes/icon.css">        
-        <script type="text/javascript" src="jquery-easyui-1.9.11/jquery.min.js"></script>
-        <script type="text/javascript" src="jquery-easyui-1.9.11/jquery.easyui.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="../css/estiloReceta.css" media="all" />     
+    <link rel="stylesheet" type="text/css" href="../jquery-easyui-1.9.11/themes/default/easyui.css">
+        <link rel="stylesheet" type="text/css" href="../jquery-easyui-1.9.11/themes/icon.css">        
+        <script type="text/javascript" src="../jquery-easyui-1.9.11/jquery.min.js"></script>
+        <script type="text/javascript" src="../jquery-easyui-1.9.11/jquery.easyui.min.js"></script>    
     <link rel="stylesheet" type="text/css" href="../jquery-easyui-1.9.11/demo/demo.css">
 </head>
 <body>
