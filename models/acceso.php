@@ -20,7 +20,7 @@ switch($op)
             $titulo=$_POST['TITULO_REC'];
             $ingredientes=$_POST['INGRE_REC'];
             $descripcion=$_POST['DESC_REC'];
-            $sqlInsert="INSERT INTO recetas(ID_REC,TITULO_REC,INGRE_REC,DESC_REC) VALUES ('$id','$titulo','$ingredientes','$descripcion','$telefono','$sexo')";
+            $sqlInsert="INSERT INTO recetas(ID_REC,TITULO_REC,INGRE_REC,DESC_REC) VALUES ('$id','$titulo','$ingredientes','$descripcion')";
             if($mysqli->query($sqlInsert)===TRUE)
             {
             echo json_encode("Se guardo correctamente");
