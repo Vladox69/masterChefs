@@ -13,7 +13,7 @@
     <h2>Formulario Recetas</h2>
     <p>Seleccionar los botones para obtener el proceso deseado.</p>
     <table id="dg" title="Recetario" class="easyui-datagrid" style="width:700px;height:250px"
-            url="models/cargar.php"
+            url="/masterChefs/models/cargar.php"
             toolbar="#toolbar" pagination="true"
             rownumbers="true" fitColumns="true" singleSelect="true">
         <thead>

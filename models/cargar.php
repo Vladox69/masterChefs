@@ -14,6 +14,5 @@ if($buscarRecetas->num_rows > 0){
 }else{
     $result="No se encontraron recetas";
 }
-
 echo json_encode($result);
 ?>
