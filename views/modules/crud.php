@@ -150,8 +150,8 @@
             if (row){
                 $.messager.confirm('Confirm','¿Desea eliminar la receta?',function(r){
                     if (r){
-                        $.post('models/acceso.php',{ op: "deleteReceta",
-                         CED_EST: row["CED_EST"]},function(resultado){
+                        $.post('/masterChefs/models/acceso.php',{ op: "deleteReceta",
+                         ID_REC: row["ID_REC"]},function(resultado){
                             if (resultado.success){
                                 $('#dg').datagrid('reload');    // reload the user data
                             } else {
