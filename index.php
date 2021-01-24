@@ -15,9 +15,9 @@
 ?>
         <header class="main-header">
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Recetas</a>
-                <a href="#">Tus recetas</a>
+                <a href="http://localhost/masterChefs/index.php">Inicio</a>
+                <a href="http://localhost/masterChefs/filtrarRecetas/indexFiltro.html">Recetas</a>
+                <a href="http://localhost/masterChefs/views/modules/crud.php">Tus recetas</a>
                 <a href="#">Contactos</a>
                 <a href="controllers/logout.php">Cerrar sesión</a>
             </nav>
