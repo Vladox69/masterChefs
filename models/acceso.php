@@ -17,10 +17,10 @@ switch($op)
         case 'insertarReceta':
             header('Content-Type: application/json');
             $id=$_POST['ID_REC'];
-            $titulo=$_POST['TIT_REC'];
+            $titulo=$_POST['TITULO_REC'];
             $ingredientes=$_POST['INGRE_REC'];
             $descripcion=$_POST['DESC_REC'];
-            $sqlInsert="INSERT INTO recetas(ID_REC,TIT_REC,INGRE_REC,DESC_REC) VALUES ('$id','$titulo','$ingredientes','$descripcion','$telefono','$sexo')";
+            $sqlInsert="INSERT INTO recetas(ID_REC,TITULO_REC,INGRE_REC,DESC_REC) VALUES ('$id','$titulo','$ingredientes','$descripcion','$telefono','$sexo')";
             if($mysqli->query($sqlInsert)===TRUE)
             {
             echo json_encode("Se guardo correctamente");
@@ -39,10 +39,10 @@ switch($op)
         case 'updateReceta':
             header('Content-Type: application/json');
             $id=$_POST['ID_REC'];
-            $titulo=$_POST['TIT_REC'];
+            $titulo=$_POST['TITULO_REC'];
             $ingredientes=$_POST['INGRE_REC'];
             $descripcion=$_POST['DESC_REC'];
-            $sqlUpdate="UPDATE recetas SET TIT_REC = '$titulo',
+            $sqlUpdate="UPDATE recetas SET TITULO_REC = '$titulo',
             INGRE_REC = '$ingredientes',
             DESC_REC = '$descripcion' WHERE ID_REC = $id";
             if($mysqli->query($sqlUpdate)===TRUE)
