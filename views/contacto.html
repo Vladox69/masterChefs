@@ -3,16 +3,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
-    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilo-index.css">
+    <link rel="shortcut icon" href="/images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/estilo-index.css">
     <meta name="viewport" content="width=device-width, user-scalable-yes, initial-scale=1.0">
 </head>
 <body>
     <header class="main-header">
         <nav>
-            <a href="http://localhost/masterChefs/index.php">Inicio</a>
-            <a href="http://localhost/masterChefs/filtrarRecetas/indexFiltro.html">Recetas</a>
-            <a href="http://localhost/masterChefs/views/modules/crud.php">Tus recetas</a>
+            <a href="index.php">Inicio</a>
+            <a href="filtrarRecetas/indexFiltro.html">Recetas</a>
+            <a href="views/modules/crud.php">Tus recetas</a>
             <a href="views/contacto.html">Contactos</a>
         </nav>
         <section class="textos-header">
@@ -27,35 +27,38 @@
     </header>
 
     <main>
+      <div>
         <section><form action="contact.php" method="post">
-            <div class="elem-group">
-              <label for="name">Nombre</label>
-              <input type="text" id="name" name="visitor_name" placeholder="" pattern=[A-Z\sa-z]{3,20} required>
-            </div>
-            <div class="elem-group">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="visitor_email" placeholder="ejemplo@email.com" required>
-            </div>
-            <div class="elem-group">
-              <label for="department-selection">Seleciona Departamento</label>
-              <select id="department-selection" name="concerned_department" required>
-                  <option value="">Seleciona Departamento</option>
-                  <option value="recetas">Recetas</option>
-                  <option value="soporte">Soporte Tecnico</option>
-                  <option value="sugerencias">Sugerencias</option>
-              </select>
-            </div>
-            <div class="elem-group">
-              <label for="title">Razon para escribir</label>
-              <input type="text" id="title" name="email_title" required placeholder="Unable to Reset my Password" pattern=[A-Za-z0-9\s]{8,60}>
-            </div>
-            <div class="elem-group">
-              <label for="message">Escribe tu mensaje</label>
-              <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
-            </div>
-            <button type="submit">Enviar Mensaje</button>
-          </form>
-        </section>
+          <div class="elem-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="visitor_name" placeholder="" pattern=[A-Z\sa-z]{3,20} required>
+          </div>
+          <div class="elem-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="visitor_email" placeholder="ejemplo@email.com" required>
+          </div>
+          <div class="elem-group">
+            <label for="department-selection">Seleciona Departamento</label>
+            <select id="department-selection" name="concerned_department" required>
+                <option value="">Seleciona Departamento</option>
+                <option value="recetas">Recetas</option>
+                <option value="soporte">Soporte Tecnico</option>
+                <option value="sugerencias">Sugerencias</option>
+            </select>
+          </div>
+          <div class="elem-group">
+            <label for="title">Razon para escribir</label>
+            <input type="text" id="title" name="email_title" required placeholder="Razon(es)" pattern=[A-Za-z0-9\s]{8,60}>
+          </div>
+          <div class="elem-group">
+            <label for="message">Escribe tu mensaje</label>
+            <textarea id="message" name="visitor_message" placeholder="Qué deseas avisar?." required></textarea>
+          </div>
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+      </section>
+      </div>
+        
         
     </main>
     <footer>
