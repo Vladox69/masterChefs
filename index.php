@@ -28,8 +28,8 @@
     ?>
     <header class="main-header">
     <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Recetas</a>
+            <a href="http://localhost/masterChefs/index.php">Inicio</a>
+            <a href="http://localhost/masterChefs/filtrarRecetas/indexFiltro.html">Recetas</a>
             <a href="http://localhost/masterChefs/login.html">Ingresar</a>
             <a href="#">Contactos</a>
         </nav>
