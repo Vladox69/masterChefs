@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,37 +10,14 @@
     <meta name="viewport" content="width=device-width, user-scalable-yes, initial-scale=1.0">
 </head>
 
-<?php
-    session_start();
-    require_once("controllers/islogin.php");
-    if($isconnect){
-?>
-        <header class="main-header">
-            <nav>
-                <a href="http://localhost/masterChefs/index.php">Inicio</a>
-                <a href="http://localhost/masterChefs/filtrarRecetas/indexFiltro.html">Recetas</a>
-                <a href="http://localhost/masterChefs/views/modules/crud.php">Tus recetas</a>
-                <a href="views/contacto.html">Contactos</a>
-                <a href="controllers/logout.php">Cerrar sesión</a>
-            </nav>
-    <?php
-    }else{
-    ?>
+<body>
     <header class="main-header">
-    <nav>
-            <a href="http://localhost/masterChefs/index.php">Inicio</a>
-            <a href="http://localhost/masterChefs/filtrarRecetas/indexFiltro.html">Recetas</a>
-            <a href="http://localhost/masterChefs/login.html">Ingresar</a>
-            <a href="views/contacto.html">Contactos</a>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Recetas</a>
+            <a href="#">Tus recetas</a>
+            <a href="modules/contacto.html">Contactos</a>
         </nav>
-
-    <?php
-    }
-    ?>
-    <body>
-    
-    <header class="main-header">
-        
         <section class="textos-header">
             <h1>Recetas y algo más...</h1>
             <h2>Mira nuestras recetas y compártenos la tuya.</h2>
@@ -132,7 +111,5 @@
         </div>
         <h2 class="titulo-final">&copy; GrupoACS</h2>
     </footer>
-
 </body>
 
-</html>
