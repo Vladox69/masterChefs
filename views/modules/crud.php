@@ -8,8 +8,28 @@
         <script type="text/javascript" src="/masterChefs/jquery-easyui-1.9.11/jquery.min.js"></script>
         <script type="text/javascript" src="/masterChefs/jquery-easyui-1.9.11/jquery.easyui.min.js"></script>    
     <link rel="stylesheet" type="text/css" href="/masterChefs/jquery-easyui-1.9.11/demo/demo.css">
+    <link rel="shortcut icon" href="/masterChefs/images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/masterChefs/css/estilo-index.css">
 </head>
-<body>
+<header class="main-header">
+        <nav>
+                <a href="http://localhost/masterChefs/index.php">Inicio</a>
+                <a href="http://localhost/masterChefs/filtrarRecetas/indexFiltro.html">Recetas</a>
+                <a href="http://localhost/masterChefs/views/modules/crud.php">Tus recetas</a>
+                <a href="#">Contactos</a>
+                <a href="controllers/logout.php">Cerrar sesión</a>
+            </nav>
+        <section class="textos-header">
+            <h1>Recetas y algo más...</h1>
+            <h2>Mira nuestras recetas y compártenos la tuya.</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.99 C150.67,94.04 344.24,-74.70 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #ffffff;"></path>
+            </svg></div>
+    </header>
+<body>   
     <h2>Formulario Recetas</h2>
     <p>Seleccionar los botones para obtener el proceso deseado.</p>
     <table id="dg" title="Recetario" class="easyui-datagrid" style="width:700px;height:250px"
