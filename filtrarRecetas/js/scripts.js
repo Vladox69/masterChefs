@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    alert('holi.. Estas seguro de actualizar la pagina?');
+    // Aqui se encuentra la alerta de actualizacion de cada pagina
+    alert('Estas seguro de actualizar la pagina?');
     //agregar la clase avtive al primer enlace
     $(' .category_list .categor_item[category="all"]').addClass('ct_item-active');
     // FILTRANDO PRODUCTOS =======================================================================
