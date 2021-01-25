@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo-index.css">
+    <meta name="viewport" content="width=device-width, user-scalable-yes, initial-scale=1.0">
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <a href="http://localhost/masterChefs/index.php">Inicio</a>
+            <a href="http://localhost/masterChefs/filtrarRecetas/indexFiltro.html">Recetas</a>
+            <a href="http://localhost/masterChefs/views/modules/crud.php">Tus recetas</a>
+            <a href="views/contacto.html">Contactos</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Si necesitas mas informacion contactanos.</h1>
+            <h2>Escríbenos alguna pregunta u opinión acerca de nuestra página web.</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.99 C150.67,94.04 344.24,-74.70 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #ffffff;"></path>
+            </svg></div>
+    </header>
+
+    <main>
+        <section><form action="contact.php" method="post">
+            <div class="elem-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="visitor_name" placeholder="" pattern=[A-Z\sa-z]{3,20} required>
+            </div>
+            <div class="elem-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="visitor_email" placeholder="ejemplo@email.com" required>
+            </div>
+            <div class="elem-group">
+              <label for="department-selection">Seleciona Departamento</label>
+              <select id="department-selection" name="concerned_department" required>
+                  <option value="">Seleciona Departamento</option>
+                  <option value="recetas">Recetas</option>
+                  <option value="soporte">Soporte Tecnico</option>
+                  <option value="sugerencias">Sugerencias</option>
+              </select>
+            </div>
+            <div class="elem-group">
+              <label for="title">Razon para escribir</label>
+              <input type="text" id="title" name="email_title" required placeholder="Unable to Reset my Password" pattern=[A-Za-z0-9\s]{8,60}>
+            </div>
+            <div class="elem-group">
+              <label for="message">Escribe tu mensaje</label>
+              <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
+            </div>
+            <button type="submit">Enviar Mensaje</button>
+          </form>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="contenido-footer">
+                <h4>Teléfonos</h4>
+                <p>0963034181/032765241</p>
+            </div>
+            <div class="contenido-footer">
+                <h4>Email</h4>
+                <p>recetasymas@gmail.com</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; GrupoACS</h2>
+    </footer>
+</body>

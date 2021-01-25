@@ -18,7 +18,7 @@
                 <a href="http://localhost/masterChefs/index.php">Inicio</a>
                 <a href="http://localhost/masterChefs/filtrarRecetas/indexFiltro.html">Recetas</a>
                 <a href="http://localhost/masterChefs/views/modules/crud.php">Tus recetas</a>
-                <a href="#">Contactos</a>
+                <a href="views/contacto.html">Contactos</a>
                 <a href="controllers/logout.php">Cerrar sesión</a>
             </nav>
     <?php
@@ -31,7 +31,7 @@
             <a href="#">Inicio</a>
             <a href="#">Recetas</a>
             <a href="http://localhost/masterChefs/login.html">Ingresar</a>
-            <a href="#">Contactos</a>
+            <a href="views/contacto.html">Contactos</a>
         </nav>
 
     <?php
